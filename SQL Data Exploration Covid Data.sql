@@ -123,12 +123,12 @@ From PopvsVac
 DROP Table if exists #PercentPopulationVaccinated
 Create Table #PercentPopulationVaccinated
 (
-Continent nvarchar(255),
-Location nvarchar(255),
+Continent varchar(255),
+Location varchar(255),
 Date datetime,
-Population numeric,
-New_vaccinations numeric,
-RollingPeopleVaccinated numeric
+Population bigint,
+New_vaccinations bigint,
+RollingPeopleVaccinated bigint
 )
 
 Insert into #PercentPopulationVaccinated
